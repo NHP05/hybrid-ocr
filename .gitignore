@@ -1,0 +1,39 @@
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Testing / Scratch files
+test_ocr_rec.py
+src/evaluate.py
+src/generate_synthetic_data.py
+
+# PyTorch & PaddleOCR caches
+/inference_results/
+/output/
+/log_output/
+*.pth
+*.pdparams
+*.pdopt
+*.pdmodel
+~/.paddlex/
+~/.paddleocr/
+
+# Data and Outputs (keep the folder structure but ignore files inside)
+data/*
+!data/input_images/
+data/input_images/*
+!data/input_images/.gitkeep
+
+!data/output_results/
+data/output_results/*
+!data/output_results/.gitkeep
